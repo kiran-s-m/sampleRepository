@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Form</title>
+    <style>
+        table{
+            margin: 50px;
+            background-color: aqua;
+            border: 1px solid;
+            border-collapse:unset;
+            /* border-color: Black; */
+        }
+        input{
+            margin: 20 px;
+            border-radius: 5px;
+            text-align: left;
+
+        }
+        input:focus{
+            background-color: grey;
+            /* When is given, input field turns grey*/
+        }
+        input[type="submit"]
+        {
+           background-color: blue;
+           color: white;
+        }
+        button[type="reset"]
+        {
+           background-color:red;
+           color: white;
+        }
+        fieldset{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend align="center"> Register Here</legend>
+        <table border="1px">
+            <tr>
+                <td>First name: </td>
+                <td><input placeholder="Enter your first name"></td>
+            </tr>
+            <tr>
+                <td>Last name: </td>
+                <td><input placeholder="Enter your last name"></td>
+            </tr>
+            <tr>
+                <td>Date of birth: </td>
+                <td><input type="datetime-local"></td>
+            </tr>
+            <tr>
+                <td>Email ID: </td>
+                <td><input type="email" placeholder="Enter your email ID"></td>
+            </tr>
+            <tr>
+                <td rowspan="2">Mobile number </td>
+                <td><input type="number" placeholder="Enter your mobile number"></td>
+            </tr>
+            <tr>
+                <td><input type="number" placeholder="Enter alternate mobile number"> </td>
+            </tr>
+            <tr>
+                <td>Courses opted: </td>
+                <td><input type="checkbox">Java
+                    <input type="checkbox">JavaScript
+                    <input type="checkbox">SQL
+                    <input type="checkbox">HTML+CSS
+            </tr>
+            <tr>
+                <td><label>Gender</label></td>
+                <td><input type="radio" name="a">Male
+                    <input type="radio" name="a">Female
+                </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea rows="5" cols="10"></textarea></td>
+            </tr>
+            <tr>
+                <td><label>Select preferred city</label></td>
+                <td><select>
+                    <option>Bengaluru</option>
+                    <option>Mysuru</option>
+                    <option>Hyderabad</option>
+                    <option>Noida</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label>Enter a password</label></td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td colspan="=2" align="center">
+                    <input type="submit">
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </fieldset>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<head>
+    <title>Mini project 3</title>
+    <style>
+        #parent{
+            height: 345px;
+            background-color: blueviolet;
+            width: 460px;
+            margin: 150px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        img{
+            width: inherit;
+            height: inherit;
+        }
+        #wrapper1{
+            background-color: rgba(7, 21, 146, 0.75);
+            height: inherit;
+            width: inherit;
+            position: absolute;
+            top: 0px;
+            transition: all 1s linear 3s;
+        }
+        #wrapper2{
+            background-color: rgba(0, 255, 255,0.75);
+            height: inherit;
+            width: inherit;
+            position: absolute;
+            top: 0px;
+            transition: all 1s linear 2s;
+        }
+        #wrapper3{
+            background-color:rgba(255, 0, 0,0.75);
+            height: inherit;
+            width: inherit;
+            position: absolute;
+            top: 0px;
+            transition: all 1s linear 1s;
+        }
+        #wrapper4{
+            background-color:rgba(0, 128, 0, 0.25);
+            height: inherit;
+            width: inherit;
+            position: absolute;
+            top: 0px;
+            transition: all 1s linear 0s;
+        }
+        #parent:hover #wrapper1{
+            transform: translateY(-350px);
+        }
+        #parent:hover #wrapper2{
+            transform: translateX(460px);
+        }
+        #parent:hover #wrapper3{
+            transform: translateX(-460px);
+        }
+        #parent:hover #wrapper4{
+            transform: translateY(350px);
+        }
+        #items{
+            /* background-color: rgba(100, 100, 100, 0.5); */
+            /* Give background color if transformation is given here and not seperately */
+            color:white;
+            padding: 0px;
+            position: absolute;
+            width: 200px;
+            bottom: 0px;
+            box-sizing:border-box;
+            /* transform: translateX(460px); */
+            /* transition: all 1s ease-in 0s; */
+            /* transformation given seperately for each item */
+        }
+        #A{
+            transform: translateX(460px);
+        }
+        #B{
+            transform: translateX(460px);
+        }
+        #C{
+            transform: translateX(460px);
+        }
+        #D{
+            transform: translateX(460px);
+        }
+        ul{
+            list-style: none;
+        }
+        ul li{
+            /* border: 1px solid white; */
+            /* Marked as comments to remove border */
+            margin-left: 0px;
+            padding: 5px;
+            font-size: 20px;
+            font-family: cursive;
+            color: white;
+        }
+        #parent:hover #A{
+            transform: translateX(0);
+            transition: all 500ms ease-in 4000ms;
+        }
+        #parent:hover #B{
+            transform: translateX(0);
+            transition: all 500ms ease-in 4500ms;
+        }
+        #parent:hover #C{
+            transform: translateX(0);
+            transition: all 500ms ease-in 5000ms;
+        }
+        #parent:hover #D{
+            transform: translateX(0);
+            transition: all 500ms ease-in 5500ms;
+        }
+        h2{
+            padding:10px;
+            margin:145px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <img src="file:///E:\Photos\Cousins\IMG20201122150619.jpg">
+        <div id="wrapper1"></div>
+        <div id="wrapper2"></div>
+        <div id="wrapper3"></div>
+        <div id="wrapper4"><h2>Touch here</h2></div>
+        <div id="items">
+            <ul>
+                <li id="A">Play hard</li>
+                <li id="B">Study well</li>
+                <li id="C">Stay blessed</li>
+                <li id="D">Be happy</li>
+            </ul>
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bouncing balls</title>
+   <style>
+
+    div{
+        margin-top:300px;
+    }
+    div span{
+        display:inline-block;
+        height:100px;
+        width:100px;
+        border-radius: 100%;
+        margin:30px;
+        box-shadow: 0 0 15px white;
+        animation: ABC 1s linear 0s infinite normal;
+    }
+    @keyframes ABC {
+        0%,100%{
+            transform: translateY(-200px);
+        }
+        50%{
+            transform: translateY(0px);
+        }
+    }
+        body{
+            background-color:black;
+        }
+        div span:nth-child(1){
+            background-color:coral;
+            animation-delay:200ms;
+            animation-duration: 1000ms;
+        }
+        div span:nth-child(2){
+            background-color:blue;
+            animation-delay:400ms;
+            animation-duration: 2000ms;
+        }
+        div span:nth-child(3){
+            background-color:green;
+            animation-delay:300ms;
+            animation-duration: 1500ms;
+        }
+        div span:nth-child(4){
+            background-color:grey;
+            animation-delay:600ms;
+            animation-duration: 800ms;
+        }
+        div span:nth-child(5){
+            background-color:purple;
+            animation-delay:700ms;
+            animation-duration: 500ms;
+        }
+        div span:nth-child(6){
+            background-color:turquoise;
+            animation-delay:300ms;
+            animation-duration: 750ms;
+        }
+</style>
+</head>
+<body>
+    <div>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animation</title>
+    <style>
+        div{
+            font-size:20px;
+            width: 100px;
+            text-align:center;
+            padding: 10px;
+            animation: Slide 2s ease-in-out 0s infinite normal;
+        }
+        @keyframes Slide {
+            0%,100%{
+                /* transform:translateX(0px); */
+                background-color:aqua;
+                margin-top: 0px;
+                margin-left: 0px;
+                border-radius: 0%;
+                color:black;
+            }
+            25%{
+                /* transform:translateX(200px); */
+                margin-top: 0px;
+                margin-left: 200px;
+                border-radius: 100%;
+                background-color: red;
+                color:yellow;
+            }
+            50%{
+                /* transform:translate(200px 200px); */
+                margin-top: 200px;
+                margin-left: 200px;
+                border-radius: 0%;
+                background-color: yellow;
+                color:red;
+            }
+            75%{
+                /* transform:translateY(200px); */
+                margin-top: 200px;
+                margin-left: 0px;
+                border-radius: 100%;
+                background-color:blue;
+                color:white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Animation
+    </div>
+</body>
+</html>

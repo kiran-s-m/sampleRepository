@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Z index property</title>
+    <style>
+        #p{
+            width:550px;
+            height:400px;
+            background-color:orchid;
+            margin:200px auto;
+            position:relative;
+            
+        }
+        img{
+            width:inherit;
+            height:inherit;
+           
+        }
+      #cover{
+          width:inherit;
+          height: inherit;
+          background:red;
+          position: absolute;
+          top: 0;
+          z-index:-7;
+         
+      }
+      #i{
+          position:absolute;
+          top: 0;
+          left: 0;
+          z-index:-3;
+      }
+
+    </style>
+</head>
+<body>
+    <div id="p">
+        <img src="https://images.indianexpress.com/2022/05/yash1200.jpg">
+        <div id="cover"> 
+
+        </div>
+        <img id="i" src="https://assets.gqindia.com/photos/625d36a1fcfaab5b0ecc5ec6/3:2/w_1620,h_1080,c_limit/Yash%20fee%20for%20KGF%20Chapter%202.jpg">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tables assignment</title>
+<style>
+    table{
+        border:2px solid blue;
+        border-collapse:collapse;
+    }
+    thead{
+        background-color:aqua;
+    }
+.A{
+    background-color:yellow;
+}
+.B{
+    background-color:blanchedalmond;
+}
+</style>
+</head>
+<body>
+    <h1>
+        Students placement details
+    </h1>
+    <table border cellpadding="5px" cellspacing="2px">
+        <thead>
+            <tr >
+                <th>Name</th>
+                <th>Degree</th>
+                <th colspan="2">Company interviews attended</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="A">
+                <td>Name1</td>
+                <td rowspan="4">Mechanical Engineering</td>
+                <td>Comp1</td>
+                <td>Comp2</td>
+            </tr>
+            <tr class="B">
+                <td>Name2</td>
+                <td>Comp1</td>
+                <td>Comp3</td>
+            </tr>
+            <tr class="A">
+                <td>Name3</td>
+                <td>Comp2</td>
+                <td>Comp4</td>
+            </tr>
+            <tr class="B">
+                <td>Name4</td>
+                <td>Comp3</td>
+                <td>Comp4</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

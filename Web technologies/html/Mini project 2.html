@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    <title>Mini project 2</title>
+    <style>
+        #parent{
+            height: 345px;
+            background-color: blueviolet;
+            width: 460px;
+            margin: 350px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        img{
+            width: inherit;
+            height: inherit;
+        }
+        #wrapper1{
+            background-color: rgba(7, 21, 146, 0.75);
+            height: inherit;
+            width: 230px;
+            position: absolute;
+            top: 0px;
+            transition: all 1s linear 500ms;
+        }
+        #wrapper2{
+            background-color: rgba(0, 1, 10, 0.75);
+            height: inherit;
+            width: 230px;
+            position: absolute;
+            top: 0px;
+            left: 230px;
+            transition: all 1s linear 500ms;
+        }
+        #parent:hover #wrapper1{
+            transform:rotateY(90deg);
+        }
+        #parent:hover #wrapper2{
+            transform: rotateY(90deg);
+        }
+        #items{
+            background-color:transparent;
+            color:white;
+            padding: 0px;
+            position: absolute;
+            width: 200px;
+            bottom: 0px;
+            box-sizing:border-box;
+            transform: translateX(460px);
+            transition: all 1s ease-in 0s;
+        }
+        ul{
+            list-style: none;
+        }
+        ul li{
+            border: 1px solid white;
+            margin-left: 0px;
+            padding: 5px;
+            font-size: 20px;
+            font-family: cursive;
+            color: white;
+        }
+        #parent:hover #items{
+            transform: translateX(0);
+            transition: all 1s ease-in 1s;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <img src="file:///E:\Photos\Cousins\IMG20201122150619.jpg">
+        <div id="wrapper1"></div>
+        <div id="wrapper2"></div>
+        <div id="items">
+            <ul>
+                <li>Play hard</li>
+                <li>Study well</li>
+                <li>Stay blessed</li>
+                <li>Be happy</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
